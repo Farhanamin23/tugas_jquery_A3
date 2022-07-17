@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas A3 Jquery Validation Amin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="card">
+        <form action="#" name="userForm" id="userForm" method="post">
+            <h3>Jquery Form Validation</h3>
+            <div class="form-group">
+                <input class="input" type="text" name="name" id="name" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+                <input class="input" type="text" name="email" id="email" placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+                <input class="input" type="addres" name="addres" id="addres" placeholder="Enter Your addres">
+            </div>
+            <div class="form-group">
+                <input class="input" type="number" name="ZipCode" id="ZipCode" placeholder="Enter Your Zip Code">
+            </div>
+            <div class="form-group">
+                <input class="input" type="date" name="date" id="date" placeholder="Enter Your Birth day">
+            </div>
+            <div class="form-group">
+                <input class="input" type="number" name="phone" id="phone" placeholder="Enter Your Phone">
+            </div>
+            <div class="form-group">
+                <input class="input" type="password" name="password" id="password" placeholder="Enter Youre Password">
+            </div>
+            <div class="form-group">
+                <input class="input" type="password" name="confirm_password" id="confirm_password" placeholder="Enter Confirm Password">
+            </div>
+        <section class="form-element">
+            <fieldset class="captchaField">
+                <span id="SuccessMessage" class="success">Captcha Succes</span>
+                <input type="text" id="UserCaptchaCode" class="CaptchaTxtField" placeholder='Enter Youre Captcha'>
+                <span id="WrongCaptchaError" class="error"></span>
+                <div class='CaptchaWrap'>
+            <div id="CaptchaImageCode" class="CaptchaTxtField">
+                <canvas id="CapCode" class="capcode" width="300" height="80"></canvas>
+            </div> 
+                <input type="button" class="ReloadBtn"  value="`" onclick='CreateCaptcha();'>
+            </div>
+                <input type="submit" name="submit" class="btnSubmit" onclick="CheckCaptcha(); Submit();" value="Submit">
+            </fieldset>
+        </section>
+    </form>
+    </div>        
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/custom.js"></script>
+</body>
+</html>
