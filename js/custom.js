@@ -10,7 +10,7 @@ $("#userForm").validate({
         },
         addres:{
             required: true,
-            addres: true
+            minlength:4
         },
         ZipCode:{
             required: true,
@@ -44,7 +44,7 @@ $("#userForm").validate({
         },
         addres: {
             required: 'The Addres field is required',
-            adrres: 'You must enter youre addres'
+            minlength: 'You must enter at least 4 characters'
         },
         ZipCode: {
             required: 'The Zip Code field is required',

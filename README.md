@@ -42,7 +42,7 @@ pada clsss card itu akan saya gunakan untuk membaut file di css nya
 "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
 
 ```
-'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'>
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js">
 
 ```
 
